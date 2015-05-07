@@ -1,7 +1,6 @@
 FROM ruby:2.2.2-slim
 MAINTAINER mactynow
 
-ENV NEW_RELIC_HOSTNAME 
 ENV NEW_RELIC_DEBUG verbose
 
 WORKDIR .
