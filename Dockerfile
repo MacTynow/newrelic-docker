@@ -10,7 +10,7 @@ RUN bundle install
 
 RUN rm -rf /tmp/*
 ADD nrsysmond /
+ADD nrsysmond.sh /
 ADD nrsysmond.cfg /
 
-CMD /nrsysmond -c /nrsysmond.cfg -n $NEW_RELIC_HOSTNAME \
--d $NEW_RELIC_DEBUG -l /dev/stdout -f
+CMD etcd-env /global ./nrsysmond.sh
