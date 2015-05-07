@@ -11,6 +11,5 @@ RUN bundle install
 RUN rm -rf /tmp/*
 ADD nrsysmond /
 ADD nrsysmond.sh /
-ADD nrsysmond.cfg /
 
 CMD etcd-env /global ./nrsysmond.sh
