@@ -8,6 +8,11 @@ to write your newrelic key in your Dockerfile.
 
 ## Installation 
 
+This is specific for running in EC2.
+
+You need to set your `NEWRELIC_KEY` environment variable in the /global dir in 
+etcd.
+
 Follow the instructions at [this page][1] to download the nrsysmond beta and 
 nrsysmond.cfg files and add them to this repo. Then run docker build. Or get the
  container on the hub by running docker pull pocketplaylab/newrelic-docker.
