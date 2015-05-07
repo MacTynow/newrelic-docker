@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    etcd-env (0.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  etcd-env (~> 0.0.4)
